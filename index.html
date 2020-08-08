@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gmail Clone</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+
+  <header id="main-nav">
+    <div class="left-icons">
+      <i class="fas fa-bars"></i>
+      <img src="./img/logo.png" alt="logo">
+    </div>
+
+    <div class="search-bar">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search mail">
+      <i class="fas fa-sort-down"></i>
+    </div>
+
+    <div class="right-icons">
+      <i class="far fa-question-circle"></i>
+      <i class="fas fa-cog"></i>
+      <i class="fas fa-th"></i>
+      <img src="./img/profile.jpg" alt="profile">
+    </div>
+  </header>
+
+  <div id="main-container">
+
+    <div class="flex-container">
+      <!-- Left Navigation -->
+      <div class="left-nav">
+        <div class="compose">
+          <div class="btn">
+            <a href=""><img src="./img/compose.png" alt="create">
+            <p>Compose</p></a>
+          </div>
+        </div>
+
+        <div class="nav-list">
+          <a href="#"><i class="fas fa-inbox"></i><span class="header">Inbox</span><span class="count">1,123</span></a>
+          <a href="#"><i class="fas fa-star"></i>Starred</a>
+          <a href="#"><i class="fas fa-clock"></i>Snoozed</a>
+          <a href="#"><i class="fas fa-paper-plane"></i>Sent</a>
+          <a href="#"><i class="fas fa-file"></i>Drafts</a>
+          <a href="#"><i class="fas fa-box"></i>Call log</a>
+          <a href="#"><i class="fas fa-box"></i>Junk</a>
+          <a href="#"><i class="fas fa-box"></i>SMS</a>
+          <a href="#"><i class="fas fa-box"></i>Unwanted</a>
+          <a href="#"><i class="fas fa-sort-down"></i>More</a>
+        </div>
+
+        <div class="meet">
+          <h2>Meet</h2>
+          <a href="#"><i class="fas fa-video"></i> Start a meeting</a>
+          <a href="#"><i class="fas fa-keyboard"></i> Join a meeting</a>
+
+        </div>
+
+
+        <div class="hangouts">
+          <h2>Hangouts</h2>
+          <div class="user"><img src="./img/profile.jpg" alt="user"> David <i class="fas fa-sort-down"></i>
+          
+            <a href="#"><i class="fas fa-plus"></i></a>
+          </div>
+
+          
+        </div>
+
+      </div>
+
+      <!-- Main Content / mails list -->
+      <div class="main-content">
+
+        <div class="content-nav">
+          <div class="left-icons">
+            <div class="select"><input type="checkbox">
+              <i class="fas fa-caret-down"></i>
+            </div>
+            <i class="fas fa-redo-alt"></i>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+
+          <div class="right-icons">
+            <span class="order">1-50 0f 2,828</span>
+            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+
+        <div class="mail-box">
+
+          <div class="mail-header">
+
+            <div class="mail-header-item">
+              <div class="icon">
+                <i class="fas fa-envelope-open-text"></i>
+              </div>
+              <div class="content">
+                <h4>Primary</h4>        
+              </div>
+            </div>
+
+            <div class="mail-header-item">
+              <div class="icon">
+                <i class="fas fa-user-friends"></i>
+              </div>
+              <div class="content">
+                <h4>Social <span class="count blue">50 new</span></h4>
+                <p class="sub-text">Jumia Service, Amazon, Wish, Ebay</p>        
+              </div>
+            </div>
+
+            <div class="mail-header-item">
+              <div class="icon">
+                <i class="fas fa-tag"></i>
+              </div>
+              <div class="content">
+                <h4>Promotions <span class="count green">45 new</span></h4>
+                <p class="sub-text">YouTube, Quora Digest, Instagram</p>        
+              </div>
+            </div>
+                  
+          </div>
+
+          <!-- mailing lists -->
+          <!-- 1st Mail -->
+          <div class="mail-list">
+            <div class="mail-icons-left">
+              <input type="checkbox" name="mail" id="mail">
+              <i class="far fa-star"></i>
+              <i class="far fa-bookmark"></i>
+              <h4 class="title">Slack</h4>
+            </div>
+            <div class="mail-content">
+              <p class="subject">Slack account sign in from a new device <span class="sub-text">- Slack account signed in from a new android device</span></p>
+            </div>
+            <div class="mail-icons-right">
+              <i class="fas fa-archive"></i>
+              <i class="fas fa-trash"></i>
+              <i class="fas fa-envelope-open"></i>
+              <i class="fas fa-clock"></i>                                         
+            </div>
+            <div class="time-date">8:38 PM</div>
+
+          </div>
+          <!-- 2nd mail -->
+          <div class="mail-list">
+            <div class="mail-icons-left">
+              <input type="checkbox" name="mail" id="mail">
+              <i class="far fa-star"></i>
+              <i class="far fa-bookmark"></i>
+              <h4 class="title">ZipRecruiter</h4>
+            </div>
+            <div class="mail-content">
+              <p class="subject">FRONTEND WEB DEVELOPER candidates needed in SEATTLE <span class="sub-text">- David Herbert, we've found new positions that match your search Recommended</span></p>
+            </div>
+            <div class="mail-icons-right">
+              <i class="fas fa-archive"></i>
+              <i class="fas fa-trash"></i>
+              <i class="fas fa-envelope-open"></i>
+              <i class="fas fa-clock"></i>                                         
+            </div>
+            <div class="time-date">Aug 7</div>
+
+          </div>
+
+          <!-- 3rd Mail -->
+          <div class="mail-list">
+            <div class="mail-icons-left">
+              <input type="checkbox" name="mail" id="mail">
+              <i class="far fa-star"></i>
+              <i class="far fa-bookmark"></i>
+              <h4 class="title">Netlify Team</h4>
+            </div>
+            <div class="mail-content">
+              <p class="subject">Your Netlify account and helpful links <span class="sub-text">- Welcome to Netlify! You just joined hundreds of thousands of developers building faster, safer, and more scalable web projects.</span></p>
+            </div>
+            <div class="mail-icons-right">
+              <i class="fas fa-archive"></i>
+              <i class="fas fa-trash"></i>
+              <i class="fas fa-envelope-open"></i>
+              <i class="fas fa-clock"></i>                                         
+            </div>
+            <div class="time-date">Aug 6</div>
+
+          </div>
+
+          <!-- 4th Mail -->
+          <div class="mail-list">
+            <div class="mail-icons-left">
+              <input type="checkbox" name="mail" id="mail">
+              <i class="far fa-star"></i>
+              <i class="far fa-bookmark"></i>
+              <h4 class="title">GitHub</h4>
+            </div>
+            <div class="mail-content">
+              <p class="subject">[GitHub] A third-party GitHub Application has been added to your account <span class="sub-text">- Hey DaveHert! A third-party GitHub Application (Netlify) with the following permissions</span></p>
+            </div>
+            <div class="mail-icons-right">
+              <i class="fas fa-archive"></i>
+              <i class="fas fa-trash"></i>
+              <i class="fas fa-envelope-open"></i>
+              <i class="fas fa-clock"></i>                                         
+            </div>
+            <div class="time-date">Aug 5</div>
+
+          </div>
+
+          <!-- 5th Mail -->
+          <div class="mail-list">
+            <div class="mail-icons-left">
+              <input type="checkbox" name="mail" id="mail">
+              <i class="far fa-star"></i>
+              <i class="far fa-bookmark"></i>
+              <h4 class="title">Stack Overflow</h4>
+            </div>
+            <div class="mail-content">
+              <p class="subject">The Overflow #33: Accelerating our mission <span class="sub-text">- Learning from musicians, teaching mistakes, and the wonders of GPT-3</span></p>
+            </div>
+            <div class="mail-icons-right">
+              <i class="fas fa-archive"></i>
+              <i class="fas fa-trash"></i>
+              <i class="fas fa-envelope-open"></i>
+              <i class="fas fa-clock"></i>                                         
+            </div>
+            <div class="time-date">Aug 3</div>
+
+          </div>
+
+          <!-- 6th Mail -->
+          <div class="mail-list">
+            <div class="mail-icons-left">
+              <input type="checkbox" name="mail" id="mail">
+              <i class="far fa-star"></i>
+              <i class="far fa-bookmark"></i>
+              <h4 class="title">Medium Daily Digest</h4>
+            </div>
+            <div class="mail-content">
+              <p class="subject">How To Write In Your Journal To Improve Yourself and Achieve Your Goals <span class="sub-text">- Improve Yourself and Achieve Your Goals</span></p>
+            </div>
+            <div class="mail-icons-right">
+              <i class="fas fa-archive"></i>
+              <i class="fas fa-trash"></i>
+              <i class="fas fa-envelope-open"></i>
+              <i class="fas fa-clock"></i>                                         
+            </div>
+            <div class="time-date">Aug 2</div>
+
+          </div>
+
+          <!-- 7th Mail -->
+          <div class="mail-list">
+            <div class="mail-icons-left">
+              <input type="checkbox" name="mail" id="mail">
+              <i class="far fa-star"></i>
+              <i class="far fa-bookmark"></i>
+              <h4 class="title">Better Programming</h4>
+            </div>
+            <div class="mail-content">
+              <p class="subject">4 Years as a Self-Taught Developer Today and it Gets Better and Better <span class="sub-text">- //medium.com/@annadayadev/4-years-as-a-self-taught-developer-today</span></p>
+            </div>
+            <div class="mail-icons-right">
+              <i class="fas fa-archive"></i>
+              <i class="fas fa-trash"></i>
+              <i class="fas fa-envelope-open"></i>
+              <i class="fas fa-clock"></i>                                         
+            </div>
+            <div class="time-date">Aug 1</div>
+
+          </div>
+
+          <!-- 8th Mail -->
+          <div class="mail-list">
+            <div class="mail-icons-left">
+              <input type="checkbox" name="mail" id="mail">
+              <i class="far fa-star"></i>
+              <i class="far fa-bookmark"></i>
+              <h4 class="title">Quora Digest</h4>
+            </div>
+            <div class="mail-content">
+              <p class="subject">What does a CEO actually do at work? <span class="sub-text">- Digest Your Quora Digest ----- Question: What does a CEO actually do at work?</span></p>
+            </div>
+            <div class="mail-icons-right">
+              <i class="fas fa-archive"></i>
+              <i class="fas fa-trash"></i>
+              <i class="fas fa-envelope-open"></i>
+              <i class="fas fa-clock"></i>                                         
+            </div>
+            <div class="time-date">Jul 29</div>
+
+          </div>
+
+          <!-- 9th Mail -->
+          <div class="mail-list">
+            <div class="mail-icons-left">
+              <input type="checkbox" name="mail" id="mail">
+              <i class="far fa-star"></i>
+              <i class="far fa-bookmark"></i>
+              <h4 class="title">Indie Hackers</h4>
+            </div>
+            <div class="mail-content">
+              <p class="subject">An Interview with Casey Botticello of Blogging Guide ($790/mo) <span class="sub-text">- Here is an interview with Casey Botticello</span></p>
+            </div>
+            <div class="mail-icons-right">
+              <i class="fas fa-archive"></i>
+              <i class="fas fa-trash"></i>
+              <i class="fas fa-envelope-open"></i>
+              <i class="fas fa-clock"></i>                                         
+            </div>
+            <div class="time-date">Jul 25</div>
+
+          </div>
+
+          <!-- 10th Mail -->
+          <div class="mail-list">
+            <div class="mail-icons-left">
+              <input type="checkbox" name="mail" id="mail">
+              <i class="far fa-star"></i>
+              <i class="far fa-bookmark"></i>
+              <h4 class="title">Coursera</h4>
+            </div>
+            <div class="mail-content">
+              <p class="subject">Recommended: Work Smarter, Not Harder: Time Management for Personal & Professional Productivity <span class="sub-text">- we've found new ways to increase productivity</span></p>
+            </div>
+            <div class="mail-icons-right">
+              <i class="fas fa-archive"></i>
+              <i class="fas fa-trash"></i>
+              <i class="fas fa-envelope-open"></i>
+              <i class="fas fa-clock"></i>                                         
+            </div>
+            <div class="time-date">Jul 20</div>
+
+          </div>
+
+          <!-- 11th Mail -->
+          <div class="mail-list">
+            <div class="mail-icons-left">
+              <input type="checkbox" name="mail" id="mail">
+              <i class="far fa-star"></i>
+              <i class="far fa-bookmark"></i>
+              <h4 class="title">No CS Degree</h4>
+            </div>
+            <div class="mail-content">
+              <p class="subject">84x salary as a remote developer <span class="sub-text">- are only medium to low income families. Every single store is locally owned</span></p>
+            </div>
+            <div class="mail-icons-right">
+              <i class="fas fa-archive"></i>
+              <i class="fas fa-trash"></i>
+              <i class="fas fa-envelope-open"></i>
+              <i class="fas fa-clock"></i>                                         
+            </div>
+            <div class="time-date">Jul 15</div>
+
+          </div>
+
+          <!-- 12th Mail -->
+          <div class="mail-list">
+            <div class="mail-icons-left">
+              <input type="checkbox" name="mail" id="mail">
+              <i class="far fa-star"></i>
+              <i class="far fa-bookmark"></i>
+              <h4 class="title">Google Alerts</h4>
+            </div>
+            <div class="mail-content">
+              <p class="subject">Google Alert – Daily Digest <span class="sub-text">- Google PS4 deal NEWS Deal: Rocket Arena Has Absolutely Plummeted in Price on PS4 Push Square.</span></p>
+            </div>
+            <div class="mail-icons-right">
+              <i class="fas fa-archive"></i>
+              <i class="fas fa-trash"></i>
+              <i class="fas fa-envelope-open"></i>
+              <i class="fas fa-clock"></i>                                         
+            </div>
+            <div class="time-date">Jul 10</div>
+
+          </div>
+
+          <!-- 13th Mail -->
+          <div class="mail-list">
+            <div class="mail-icons-left">
+              <input type="checkbox" name="mail" id="mail">
+              <i class="far fa-star"></i>
+              <i class="far fa-bookmark"></i>
+              <h4 class="title">GitHub</h4>
+            </div>
+            <div class="mail-content">
+              <p class="subject">[GitHub] Please verify your device <span class="sub-text">- Hey DaveHert! A sign in attempt requires further verification because we did not recognize your device.</span></p>
+            </div>
+            <div class="mail-icons-right">
+              <i class="fas fa-archive"></i>
+              <i class="fas fa-trash"></i>
+              <i class="fas fa-envelope-open"></i>
+              <i class="fas fa-clock"></i>                                         
+            </div>
+            <div class="time-date">Jun 15</div>
+
+          </div>
+
+          <!-- 14th Mail -->
+          <div class="mail-list">
+            <div class="mail-icons-left">
+              <input type="checkbox" name="mail" id="mail">
+              <i class="far fa-star"></i>
+              <i class="far fa-bookmark"></i>
+              <h4 class="title">Reddit</h4>
+            </div>
+            <div class="mail-content">
+              <p class="subject">"Unmatched because I believe in science." <span class="sub-text">- reddit r/Tinder · Posted by u/KeGeGa 6h ago Unmatched because I believe in science.</span></p>
+            </div>
+            <div class="mail-icons-right">
+              <i class="fas fa-archive"></i>
+              <i class="fas fa-trash"></i>
+              <i class="fas fa-envelope-open"></i>
+              <i class="fas fa-clock"></i>                                         
+            </div>
+            <div class="time-date">Jun 10</div>
+
+          </div>
+
+          <!-- 15th Mail -->
+          <div class="mail-list">
+            <div class="mail-icons-left">
+              <input type="checkbox" name="mail" id="mail">
+              <i class="far fa-star"></i>
+              <i class="far fa-bookmark"></i>
+              <h4 class="title">Indie Hackers</h4>
+            </div>
+            <div class="mail-content">
+              <p class="subject">Today's Digest: Friday Stand Up + Monthly retro! <span class="sub-text">- Your Indie Hackers community digest for June</span></p>
+            </div>
+            <div class="mail-icons-right">
+              <i class="fas fa-archive"></i>
+              <i class="fas fa-trash"></i>
+              <i class="fas fa-envelope-open"></i>
+              <i class="fas fa-clock"></i>                                         
+            </div>
+            <div class="time-date">Jun 8</div>
+
+          </div>
+
+          <!-- 16th Mail -->
+          <div class="mail-list">
+            <div class="mail-icons-left">
+              <input type="checkbox" name="mail" id="mail">
+              <i class="far fa-star"></i>
+              <i class="far fa-bookmark"></i>
+              <h4 class="title">WeTransfer</h4>
+            </div>
+            <div class="mail-content">
+              <p class="subject">New log-in to your account<span class="sub-text"> - We noticed a new log-in to your WeTransfer account. Was this you?</span></p>
+            </div>
+            <div class="mail-icons-right">
+              <i class="fas fa-archive"></i>
+              <i class="fas fa-trash"></i>
+              <i class="fas fa-envelope-open"></i>
+              <i class="fas fa-clock"></i>                                         
+            </div>
+            <div class="time-date">Jun 5</div>
+
+          </div>
+
+        </div>
+
+        <footer class="content-footer">
+          <div class="left-info">
+            <p>1.53 GB (10%) of 15 GB used</p>
+            <a href="#">Manage</a>
+          </div>
+          <div class="center-info">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Program Policies</a>
+          </div>
+          <div class="right-info">
+            <p>Last account activity: 54 minutes ago</p>
+            <a href="#">Details</a>
+          </div>
+        </footer>
+                 
+    </div>
+
+    <!-- Right Navigation -->
+  <div class="right-nav">
+
+      <div class="first-column">
+        <img src="./img/calendar.png" alt="calender">
+        <img src="./img/keep.png" alt="keep">
+        <img src="./img/tasks.png" alt="tasks">
+      </div>
+      
+      <div class="second-column">
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-chevron-right"></i>
+
+      </div>
+  </div>
+
+  </div>
+
+
+  </div>
+    
+</body>
+</html>
